@@ -34,7 +34,10 @@ const ExpenseForm = ()=>{
     }
     const submitFn=(e)=>{
         setUserInput((prev) => {
-            return({inputDate:'',inputNum:'',inputTitle:''})
+            e.preventDefault();
+            console.log(userInput)
+            setUserInput()
+            //return({...prev,inputDate:'',inputNum:'',inputTitle:''})
         })
     }
     return(
